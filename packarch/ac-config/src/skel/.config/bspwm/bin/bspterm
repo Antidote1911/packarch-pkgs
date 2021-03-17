@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# launch alacritty with other config
+if [ "$1" == "-f" ]; then
+	alacritty --class alacritty-float,alacritty-float --config-file ~/.config/alacritty/alacritty.yml
+else
+	alacritty --config-file ~/.config/alacritty/alacritty.yml
+fi

@@ -1,0 +1,20 @@
+# Maintainer: Fabrice Corraire <antidote1911@gmail.com>
+
+pkgname=ac-config
+pkgver=1.0
+pkgrel=1
+pkgdesc="Packarch home config."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=()
+
+package() {
+	# copy whole dir recursively to destination
+	rm -rf "${pkgdir}/etc/skel"
+	mkdir -p "${pkgdir}/etc/skel"
+	(find skel -type f -exec install -D "{}" "$pkgdir/etc/{}" \;)
+	# find /etc/skel/ -type f -iname "*.sh" -exec chmod +x {} \;
+	(find usr -type f -exec install -D "{}" "$pkgdir/{}" \;)
+}

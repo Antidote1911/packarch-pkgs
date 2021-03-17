@@ -1,0 +1,24 @@
+! -----------------------------------------------------------------------------
+! Sexy color scheme
+! -----------------------------------------------------------------------------
+
+*foreground:        #34302d
+*background:        #f5e7de
+
+! Colors 0-15.
+*color0:  #666661
+*color1:  #992e2e
+*color2:  #4c3226
+*color3:  #a67c53
+*color4:  #4c7399
+*color5:  #bf9986
+*color6:  #E899DA
+*color7:  #34302d
+*color8:  #7f7f7a
+*color9:  #b23636
+*color10:  #664233
+*color11:  #bf8f60
+*color12:  #5986b2
+*color13:  #d9ae98
+*color14:  #FFA8F0
+*color15:  #4c4742

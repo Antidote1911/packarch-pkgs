@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Action
+Name=Terminal Root
+Tooltip=Terminal Root
+Icon=terminal
+Profiles=on_folder;
+
+Name[fr_FR]=terminalroot
+
+[X-Action-Profile on_folder]
+Name=Terminal Root
+MimeTypes=inode/directory;
+Exec=sudo alacritty

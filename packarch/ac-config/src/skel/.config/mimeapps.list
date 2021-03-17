@@ -1,0 +1,15 @@
+[Added Associations]
+image/png=viewnior.desktop;
+image/jpeg=viewnior.desktop;
+text/x-csrc=geany.desktop;
+application/x-shellscript=geany.desktop;
+image/gif=viewnior.desktop;
+image/svg+xml=viewnior.desktop;
+application/gzip=geany.desktop;
+video/x-matroska=mpv.desktop;smplayer.desktop;
+application/octet-stream=leafpad.desktop;
+
+[Default Applications]
+image/gif=viewnior.desktop
+image/svg+xml=viewnior.desktop
+video/x-matroska=smplayer.desktop

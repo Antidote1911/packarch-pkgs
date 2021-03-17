@@ -1,0 +1,16 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=ac-wallpapers
+pkgver=1.0
+pkgrel=1
+pkgdesc="Packarch OS wallpaper pack."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=()
+
+package() {
+	# copy whole dir recursively to destination
+	(find packarch -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/backgrounds/{}" \;)
+}

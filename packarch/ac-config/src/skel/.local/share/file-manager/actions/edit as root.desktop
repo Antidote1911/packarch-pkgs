@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Tooltip=Edit as root
+Name=Edit as Root
+Icon=nvim
+Profiles=on_file;
+
+[X-Action-Profile on_file]
+Exec=sudo alacritty --class alacritty-float,alacritty-float -e nvim %f
+MimeTypes=!inode/directory;*;

@@ -1,0 +1,24 @@
+! -----------------------------------------------------------------------------
+! Archlinux color scheme
+! -----------------------------------------------------------------------------
+
+*foreground:        #c8c7c6
+*background:        #2F343F
+
+! Colors 0-15.
+*color0:  #26211d
+*color1:  #c0a695
+*color2:  #71a8c7
+*color3:  #3378bd
+*color4:  #0660c4
+*color5:  #a4afbe
+*color6:  #7a8baa
+*color7:  #c8c7c6
+*color8:  #5c5855
+*color9:  #c0a695
+*color10:  #71a8c7
+*color11:  #3378bd
+*color12:  #0660c4
+*color13:  #a4afbe
+*color14:  #7a8baa
+*color15:  #c8c7c6

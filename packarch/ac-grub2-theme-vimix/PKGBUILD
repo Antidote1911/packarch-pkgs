@@ -1,0 +1,16 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=ac-grub2-theme-vimix
+pkgver=1.0
+pkgrel=1
+pkgdesc="The default grub2 theme for packarch."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=('grub')
+
+package() {
+	# copy whole dir recursively to destination
+	(find Vimix -type f -exec install -Dm 644 "{}" "$pkgdir/boot/grub/themes/{}" \;)
+}

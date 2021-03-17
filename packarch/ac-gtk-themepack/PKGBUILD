@@ -1,0 +1,16 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=ac-gtk-themepack
+pkgver=1.0
+pkgrel=1
+pkgdesc="All GTK themes for Packarch OS."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=()
+
+package() {
+	mkdir -p "$pkgdir/usr/share/themes"
+	cp -r * "$pkgdir/usr/share/themes/"
+}

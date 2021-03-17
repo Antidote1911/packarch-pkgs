@@ -1,0 +1,98 @@
+#!/bin/bash
+
+## Author : Antidote1911
+## Mail : antidote1911@gmail.com
+## Github : @Antidote1911
+## Forked and modified from https://github.com/archcraft-os/archcraft 
+## Thx adi1090x :)
+
+
+DIR="$HOME/.config"
+XDIR="$HOME/.Xresources.d"
+
+rofi_command="rofi -theme $DIR/rofi/styles/themes.rasi"
+
+style (){
+	cat "$DIR"/themes/$1 > "$XDIR"/colors
+	nitrogen --set-zoom-fill --save /usr/share/backgrounds/$1.jpg
+	dunstify -r 1 -t 0 "Generating image cache for betterlockscreen. Please wait..."
+    betterlockscreen -u /usr/share/backgrounds/$1.jpg
+    dunstify -r 1 -t 0 "Generating new icons cache for $1 theme. Please wait..."
+    
+	if [[ $1 == "nord" ]]; then
+		cd ~/.config/numix-config && echo -e "2\ncustom\n7AABC9\n415B6B\n415B6B\n" | sudo ~/.config/numix-config/numix-folders -t
+
+	elif [[ $1 == "forest" ]]; then
+		cd ~/.config/numix-config && echo -e "2\ncustom\n74A774\n685256\n685256\n" | sudo ~/.config/numix-config/numix-folders -t
+		
+	elif [[ $1 == "snake" ]]; then
+		cd ~/.config/numix-config && echo -e "2\ncustom\nC70000\n851A0E\n851A0E\n" | sudo ~/.config/numix-config/numix-folders -t
+		
+	elif [[ $1 == "archlinux" ]]; then
+		cd ~/.config/numix-config && echo -e "4\ncustom\nFFE146\n18BBFF\nAD9930\n" | sudo ~/.config/numix-config/numix-folders -t
+		
+	elif [[ $1 == "cyberpunk" ]]; then
+		cd ~/.config/numix-config && echo -e "2\npurple\n" | sudo ~/.config/numix-config/numix-folders -t
+		
+	elif [[ $1 == "bunny" ]]; then
+		cd ~/.config/numix-config && echo -e "2\npurple\n" | sudo ~/.config/numix-config/numix-folders -t
+		
+	elif [[ $1 == "coffee" ]]; then
+		cd ~/.config/numix-config && echo -e "2\nbrown\n" | sudo ~/.config/numix-config/numix-folders -t
+		
+	elif [[ $1 == "sexy" ]]; then
+		cd ~/.config/numix-config && echo -e "2\ncustom\nf400ff\n851A0E\n851A0E\n" | sudo ~/.config/numix-config/numix-folders -t
+		
+	elif [[ $1 == "matrix" ]]; then
+		cd ~/.config/numix-config && echo -e "4\ncustom\n55FF55\n008A00\n008A00\n" | sudo ~/.config/numix-config/numix-folders -t
+	fi
+	dunstify -r 1 "Restart Bspwm to apply new colors."
+	bspc wm -r
+}
+
+# Apps
+theme_1=" Nord"
+theme_2=" Forest"
+theme_3=" Snake"
+theme_4=" Archlinux"
+theme_5=" cyberpunk"
+theme_6=" Bunny"
+theme_7=" Coffee"
+theme_8=" Sexy"
+theme_9=" Matrix"
+
+
+# Variable passed to rofi
+options="$theme_1\n$theme_2\n$theme_3\n$theme_4\n$theme_5\n$theme_6\n$theme_7\n$theme_8\n$theme_9"
+
+chosen="$(echo -e "$options" | $rofi_command -p "Available themes" -dmenu -selected-row 0)"
+case $chosen in
+    $theme_1)
+        style nord
+        ;;
+    $theme_2)
+        style forest
+        ;;
+    $theme_3)
+        style snake
+        ;;
+    $theme_4)
+        style archlinux
+        ;;
+    $theme_5)
+        style cyberpunk
+        ;;
+    $theme_6)
+        style bunny
+        ;;
+    $theme_7)
+        style coffee
+        ;;
+    $theme_8)
+        style sexy
+        ;;
+	$theme_9)
+		style matrix
+        ;;
+esac
+

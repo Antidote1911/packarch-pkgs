@@ -1,0 +1,5 @@
+[Desktop]
+## Set Default Session
+Language=fr_FR.utf8
+Session=bspwm
+#Session=herbstluftwm

@@ -1,0 +1,24 @@
+! -----------------------------------------------------------------------------
+! Forest color scheme
+! -----------------------------------------------------------------------------
+
+*foreground:        #D6E4D4
+*background:        #29353B
+
+! Colors 0-15.
+*color0:  #211e1a
+*color1:  #D6C1A9
+*color2:  #B5BFB6
+*color3:  #9ACCA9
+*color4:  #65aa96
+*color5:  #95C798
+*color6:  #6DB9C7
+*color7:  #c7c6c5
+*color8:  #B5B1AB
+*color9:  #aa9986
+*color10:  #9fa8a0
+*color11:  #9ACCA9
+*color12:  #65aa96
+*color13:  #95C798
+*color14:  #c7c6c5
+*color15:  #c7c6c5

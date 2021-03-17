@@ -1,0 +1,25 @@
+! -----------------------------------------------------------------------------
+! Coffee color scheme
+! -----------------------------------------------------------------------------
+
+*foreground:        #c0b18b
+*background:        #2f343f
+
+! Colors 0-15.
+*color0:  #e5e5e5
+*color1:  #d17b49
+*color2:  #7b8748
+*color3:  #af865a
+*color4:  #535c5c
+*color5:  #775759
+*color6:  #946F58
+*color7:  #c0b18b
+*color8:  #e5e5e5
+*color9:  #d17b49
+*color10:  #7b8748
+*color11:  #af865a
+*color12:  #535c5c
+*color13:  #775759
+*color14:  #946F58
+*color15:  #c0b18b
+ 

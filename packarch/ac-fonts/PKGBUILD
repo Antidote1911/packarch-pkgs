@@ -1,0 +1,16 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=ac-fonts
+pkgver=1.0
+pkgrel=1
+pkgdesc="Fonts for Packarch OS."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=()
+
+package() {
+	# copy whole dir recursively to destination
+	(find * -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/fonts/{}" \;)
+}

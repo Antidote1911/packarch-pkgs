@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Action
+Tooltip=Pcmanfm Root
+Name=Pcmanfm Root
+Icon=pcmanfm
+Profiles=on_folder;
+
+Name[fr_FR]=pcmanfmroot
+
+[X-Action-Profile on_folder]
+Exec=sudo pcmanfm %f
+MimeTypes=inode/directory;

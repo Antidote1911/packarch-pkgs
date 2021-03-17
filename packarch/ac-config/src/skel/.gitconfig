@@ -1,0 +1,7 @@
+[user]
+	email = antidote1911@gmail.com
+	name = Antidote1911
+[credential]
+	helper = cache --timeout=250000
+[push]
+	default = simple
