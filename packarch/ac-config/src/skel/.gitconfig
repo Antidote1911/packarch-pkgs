@@ -2,6 +2,6 @@
 	email = antidote1911@gmail.com
 	name = Antidote1911
 [credential]
-	helper = cache --timeout=250000
+	helper = store --file ~/.my-credentials
 [push]
 	default = simple
