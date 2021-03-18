@@ -17,4 +17,5 @@ package() {
 	(find skel -type f -exec install -D "{}" "$pkgdir/etc/{}" \;)
 	# find /etc/skel/ -type f -iname "*.sh" -exec chmod +x {} \;
 	(find usr -type f -exec install -D "{}" "$pkgdir/{}" \;)
+	(find root -type f -exec install -D "{}" "$pkgdir/{}" \;)
 }
