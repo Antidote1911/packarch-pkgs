@@ -27,7 +27,7 @@ if [[ $WM == "bspwm" ]]; then
 	fi
 
 cat <<EOF | xmenu | sh &
-Install Packarch			sudo alacritty -e /installer/install_packarch.sh
+Install Packarch			sudo alacritty --hold -e /installer/install_packarch.sh
 Internet						(firefox &> /dev/null &)
 File Manager
 	Pcmanfm				(pcmanfm &> /dev/null &)

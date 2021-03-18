@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Install Packarch
-Comment=Packarch Installer
-Exec=sudo "termite -t Packarch_Installer -c /installer/termite -e /installer/install_packarch.sh"
-Icon=distributor-logo-packarch
-Type=Application
-Categories=System;Settings;
