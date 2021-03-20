@@ -28,6 +28,7 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 nitrogen --restore &
 run dunst &
 run mpd &
+run parcellite &
 
 pkill -9 -f bspfloat &
 run bspfloat &
