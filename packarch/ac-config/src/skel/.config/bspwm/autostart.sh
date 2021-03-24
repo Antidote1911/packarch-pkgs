@@ -25,14 +25,16 @@ run xfsettingsd &
 xsetroot -cursor_name left_ptr &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-nitrogen --restore &
+run nitrogen --restore &
 run dunst &
 run mpd &
+run pamac-tray &
 run parcellite &
 
 pkill -9 -f bspfloat &
 run bspfloat &
 
-# Compositor is not active for vm tests
+# picom compositor is didabled for vbox tests
 # bspcomp
+
 sh ~/.config/polybar/launch.sh &
