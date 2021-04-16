@@ -27,8 +27,8 @@ if [[ $WM == "bspwm" ]]; then
 	fi
 
 cat <<EOF | xmenu | sh &
-Install Packarch			sudo alacritty --hold -e /installer/install_packarch.sh
-Internet						(firefox &> /dev/null &)
+Firefox						(firefox &> /dev/null &)
+Vivaldi						(vivaldi-stable &> /dev/null &)
 File Manager
 	Pcmanfm				(pcmanfm &> /dev/null &)
 	Ranger					alacritty -e ranger
@@ -62,6 +62,7 @@ Applications
 		Color Picker			color_picker
 	Develop
 		Atom				(atom &> /dev/null &)
+		Clion				(clion &> /dev/null &)
 		QtCreator			(qtcreator &> /dev/null &)
 	Utils
 		Htop				alacritty -e htop
